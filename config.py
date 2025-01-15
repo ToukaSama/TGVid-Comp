@@ -22,10 +22,10 @@ class Config(object):
     BOT_UPTIME = BOT_UPTIME  = time.time()
     START_PIC = os.environ.get("START_PIC", "https://graph.org/file/15e82d7e665eccc8bd9c5.jpg")
 
-    # wes response configuration     
-    WEBHOOK = bool(os.environ.get("WEBHOOK", True))
-    PORT = int(os.environ.get("PORT", "8080"))
 
+
+
+    
     
     caption = """
 **File Name**: {0}
