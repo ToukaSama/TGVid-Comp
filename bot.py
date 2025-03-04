@@ -37,8 +37,8 @@ class Bot (Client):
         self.username = me.username
         app = web.AppRunner(await web_server())
         await app.setup()
-        bind_address = "8080"
-        await web.TCPSite(app, bind_address, Config.PORT).start() 
+        bind_address = "0.0.0.0"
+         
         
         logging.info(f"✅ {me.first_name} with for Pyrogram v{__version__} (Layer {layer}) started on {me.username}. ✅")
 
