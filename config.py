@@ -6,8 +6,8 @@ id_pattern = re.compile(r'^.\d+$')
 class Config(object):
     # pyro client config
     API_ID    = os.environ.get("API_ID", "20415731")  # ⚠️ Required
-    API_HASH  = os.environ.get("API_HASH", "8282154810:AAF0fz0OhHxpZeFlVCVhfs2PYl9-PAKz_ms") # ⚠️ Required
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "7789056658:AAGpgwF3U5Hq7vYUDFuHEEc4M4QZqcQo484") # ⚠️ Required
+    API_HASH  = os.environ.get("API_HASH", "ef85493cd32eadcb5309b5957d8d1b86") # ⚠️ Required
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "8282154810:AAF0fz0OhHxpZeFlVCVhfs2PYl9-PAKz_ms") # ⚠️ Required
     FORCE_SUB = os.environ.get('FORCE_SUB', 'None') # ⚠️ Required
     AUTH_CHANNEL = int(FORCE_SUB) if FORCE_SUB and id_pattern.search(
     FORCE_SUB) else None
