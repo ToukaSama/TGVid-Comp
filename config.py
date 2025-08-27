@@ -27,8 +27,7 @@ class Config(object):
 
     
     
-    caption = """
-{0}
+    caption = "{0}"
 
 __Downloaded in {4}__
 __Encoded in {5}__
