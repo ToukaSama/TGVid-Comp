@@ -23,13 +23,9 @@ class Config(object):
     START_PIC = os.environ.get("START_PIC", "https://telegra.ph/file/897ca838f36cdd3861763-347257045a8f7806f0.jpg")
 
 
-
 caption = """
 {0}
 
 Downloaded in {4}
 Encoded in {5}
 """
-    
-    
-    
