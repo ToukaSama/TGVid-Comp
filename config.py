@@ -22,10 +22,19 @@ class Config(object):
     BOT_UPTIME = BOT_UPTIME  = time.time()
     START_PIC = os.environ.get("START_PIC", "https://telegra.ph/file/897ca838f36cdd3861763-347257045a8f7806f0.jpg")
 
+    # wes response configuration     
+    WEBHOOK = bool(os.environ.get("WEBHOOK", True))
+    PORT = int(os.environ.get("PORT", "8080"))
+
 
 caption = """
-{0}
+**File Name**: {0}
 
-Downloaded in {4}
-Encoded in {5}
+**Original File Size:** {1}
+**Encoded File Size:** {2}
+**Compression Percentage:** {3}
+
+__Downloaded in {4}__
+__Encoded in {5}__
+__Uploaded in {6}__
 """
